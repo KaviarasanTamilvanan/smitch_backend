@@ -9,3 +9,11 @@ dotenv.config()
 const app = express()
 const PORT = process.env.PORT || 8081
 
+app.use(cors(corsOptions))
+app.use(bodyparser.urlencoded({ extended : false }))
+app.use(bodyparser.json())
+app.use(expressValidator())
+
+app.listen(PORT, () =>{
+    console.log(`Server is running at PORT: ${PORT}`)
+})
