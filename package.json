@@ -1,0 +1,19 @@
+{
+  "name": "smitch_backend",
+  "version": "1.0.0",
+  "description": "Backend to do crud operations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaviarasanTamilvanan/smitch_backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaviarasanTamilvanan/smitch_backend/issues"
+  },
+  "homepage": "https://github.com/KaviarasanTamilvanan/smitch_backend#readme"
+}
