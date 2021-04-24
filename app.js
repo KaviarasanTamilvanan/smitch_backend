@@ -9,6 +9,8 @@ dotenv.config()
 const app = express()
 const PORT = process.env.PORT || 8081
 
+const userRoutes = require('./routes/user_route')
+
 const corsOptions = {
     origin : `http://localhost:${PORT}` || 'http://localhost:8081'
 }
@@ -23,6 +25,7 @@ app.use(cors(corsOptions))
 app.use(bodyparser.urlencoded({ extended : false }))
 app.use(bodyparser.json())
 app.use(expressValidator())
+app.use("/api/v1/user", user_routes)
 
 app.listen(PORT, () =>{
     console.log(`Server is running at PORT: ${PORT}`)
